@@ -1,10 +1,3 @@
-#!/bin/bash
-
-# Activate virtual environment
-source env/bin/activate
-
-# Run the script
-./aicli.py "$@"
-
-# Dectivate virtual environment
-deactivate
+zsh: command not found: llksjdf
+ls: invalid option -- j
+usage: ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format] [file ...]
