@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 import os
+from dotenv import load_dotenv
 import openai
 import sys
 import argparse
 
+# Load .env file if it exists
+load_dotenv()
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_base = "https://y2kiidz6fgoomcw45rlul6cnki0wgbcc.lambda-url.us-west-1.on.aws/v1"
+openai.api_base = os.getenv("OPENAI_API_BASE")
 
 def get_response_from_gpt3(prompt):
     messages = [{'role': 'user', 'content': prompt}]
