@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Activate virtual environment
+source env/bin/activate
+
+# Run the script
+./aicli.py "$@"
+
+# Dectivate virtual environment
+deactivate

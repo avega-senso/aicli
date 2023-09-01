@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 from dotenv import load_dotenv
 import openai
@@ -39,8 +39,8 @@ def get_input_from_std_streams():
     return input_data
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Interact with GPT-3.")
-    parser.add_argument('prompt', type=str, nargs='?', default=None, help="Initial prompt to provide to GPT-3.")
+    parser = argparse.ArgumentParser(prog="ai", description="Interact with OpenAI.")
+    parser.add_argument('prompt', type=str, nargs='?', default=None, help="Initial prompt to provide to OpenAI.")
     args = parser.parse_args()
     
     # If a prompt argument was provided
