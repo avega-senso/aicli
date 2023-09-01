@@ -89,8 +89,10 @@ Here's an example of how to use the AI CLI Tool:
 
 
 ## 1. Interactive Mode
-**Description:** Engage in dynamic conversations with the AI model in real-time.
+**Description** Engage in dynamic conversations with the AI model in real-time.
+
 **Usage:** Run the tool without providing an initial message, and the AI CLI Tool will prompt you to enter messages. It will respond based on the conversation history.
+
 **Example:**
   ```bash
 % ai --system "Man pages"
@@ -125,7 +127,9 @@ SYNOPSIS
 
 ## 2. Direct Message Input
 **Description:** Easily provide an input message directly as a command-line argument to the script.
+
 **Usage:** Pass the input message as an argument to the tool script, and the AI CLI Tool will generate a response based on the provided message.
+
 **Example:**
   ```bash
 % ai "Translate the following English text to French: 'Hello, how are you?'" --template doc --system html
@@ -139,7 +143,9 @@ SYNOPSIS
 ```
 ## 4. Piping Standard Error
 **Description:** Process error messages from another command and generate responses using the AI CLI Tool.
+
 **Usage:** Redirect the output (both stdout and stderr) from another command to the standard input of the tool script. The AI CLI Tool will generate responses based on the command's output.
+
 **Example:**
   ```bash
 % node bug.js 2>&1 | ai --system "javascript troubleshooting" --template ERROR
