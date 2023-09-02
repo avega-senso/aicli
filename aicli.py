@@ -67,7 +67,8 @@ def main(prompt=None, model='gpt-3.5-turbo', temperature=0, is_interactive=True,
 def get_input_from_std_streams():
     input_data = sys.stdin.read().strip()
     if not input_data:
-        input_data = sys.stderr.read().strip()
+        # input_data = sys.stderr.read().strip()
+        input_data = sys.stdin.read().strip()
     return input_data
 
 if __name__ == "__main__":
